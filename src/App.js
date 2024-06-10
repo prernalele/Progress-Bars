@@ -1,19 +1,27 @@
 import { useState } from "react";
-
-import EachProgressBar from "./EachProgressBar.js";
+import "./App.css";
+import EachProgressBar from "./EachProgressBar";
 
 export default function App() {
   const [progressCount, setProgressCount] = useState(0);
 
   return (
-    <div>
-      <button onClick={() => setProgressCount((prev) => prev + 1)}>Add</button>
-
-      {Array(progressCount)
-        .fill()
-        .map((index) => {
-          return <EachProgressBar key={index} />;
-        })}
+    <div className="container">
+      <button
+        className="styledButton"
+        onClick={() => {
+          setProgressCount((prev) => prev + 1);
+        }}
+      >
+        Click me to add progress bars
+      </button>
+      <div className="progressBarContainer">
+        {Array(progressCount)
+          .fill()
+          .map((index) => {
+            return <EachProgressBar key={index} />;
+          })}
+      </div>
     </div>
   );
 }

@@ -1,3 +1,10 @@
+# Goal of the project (Greatfrontend question)
+On click of the button , user should be able to see progress bar. The progress bar should fill evenly in approximately 2000ms.
+
+# Technology used 
+### React (hooks: useState, useEffect)
+### HTML, CSS
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

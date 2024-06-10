@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./EachProgressBar.css";
 
 const EachProgressBar = ({ index }) => {
   const [addWidth, setAddWidth] = useState(0);
